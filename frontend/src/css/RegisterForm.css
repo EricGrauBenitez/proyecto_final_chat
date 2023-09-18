@@ -1,0 +1,118 @@
+h1 {
+    color: aliceblue;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh; 
+    border: none;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 200px; 
+    padding: 40px; 
+    border: none; 
+  }
+  
+  label {
+    font-weight: bold;
+    color: aliceblue;
+  }
+
+  .error-input {
+    border: 3px solid rgb(184, 1, 1);
+  }
+
+  .error-message {
+    color: rgb(169, 0, 0);
+  }
+
+  /* Estilo para el mensaje de éxito */
+.success-message {
+  color: green;
+  font-size: 16px; /* Tamaño de fuente personalizado */
+}
+
+.login-button {
+  padding: 10px 40px; /* Ajusta el tamaño del botón */
+  background-color: #12724f; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #119c26; /* Cambiar color al pasar el ratón por encima */
+}
+
+.link-button {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  color: #4d759e; 
+  cursor: pointer;
+}
+
+.link-button:hover {
+  text-decoration: none;
+  color: #76a8da; 
+}
+
+button[type="submit"] {
+  background-color: #4CAF50; 
+  color: #fff; 
+  font-size: 1.2rem; 
+  padding: 12px 24px; 
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049; 
+}
+
+button[type="submit"]:focus {
+  outline: none; 
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2); 
+}
+
+.arrow-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Alinea los botones en la parte superior */
+  margin-top: 20px;
+  width: 100%;
+}
+
+.arrow-button {
+  background-color: transparent;
+  color: #12724f;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.arrow-button:hover {
+  background-color: #e0e0e0; /* Cambiar color al pasar el ratón por encima */
+}
+.arrow-buttons .prev {
+  margin-right: auto; /* Mover el botón "prev" hacia la izquierda */
+}
+
+.arrow-buttons .next {
+  margin-left: auto; /* Mover el botón "next" hacia la derecha */
+}
