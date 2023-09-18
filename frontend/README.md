@@ -1,52 +1,54 @@
-chat-frontend 💻
+# Chat with ChatGPT Project
 
-Hola Mundo! Soy Eric Grau y este es mi proyecto final del curso Full Stack web development de la escuela IT Codespace. He decidido crear un chat con la IA de ChatGPT, ya que durante el curso explotó su funcionalidad y el mundo está cambiando gracias a él. Debido a esto, hay que saber entender cómo aplicarla .
+Hello World! I'm Eric Grau, and this is my final project for the IT Codespace Full Stack Web Development course. I've chosen to create a chat using ChatGPT's AI, as its functionality has become increasingly relevant during the course, and it's changing the world. Therefore, it's important to understand how to apply it.
 
-Este proyecto está formado por otras partes:
+This project consists of several parts:
 
-https://github.com/EricGrauBenitez/chat-backend.git
-https://github.com/EricGrauBenitez/chat-openai.git
+- [chat-backend](https://github.com/EricGrauBenitez/chat-backend.git)
+- [chat-openai](https://github.com/EricGrauBenitez/chat-openai.git)
 
-Esta es la parte del Front-end:
+## Front-end Part
 
-Get Start ▶️
-:
+### Getting Started ▶️
 
-1. Requirements
-   Debes de tener NPM, NodeJS y apache2 instalados.
+Requirements:
+- You must have NPM and NodeJS installed.
+- Apache2 is also required.
 
-Install
-React
-We are going to clone the repository
-
+React Installation:
 git clone https://github.com/EricGrauBenitez/chat-frontend.git
+
 Once, the project has been created. We have to install some dependencies:
 
 npm install
 
-Adding tools
+## Adding tools
 Now we have to install redux, axios and router-dom
 
 npm install react-redux @reduxjs/toolkit axios react-router-dom
 
-Vamos a activarlo: abre la terminal desde la carpeta
+## To activate the project, open the terminal from the folder and run:
 
 npm start
 
-3. Estructura
-   La App en sí es el Chat con diferentes conversaciones. Hay una página de user para poder gestionar la información del usuario.
 
-Breakpoints
-Por la premisa mobile responsive:
+### Structure
 
-A table with most commons breakpoints:
-SIZE DEVICE
-under 767px Mobile
-between 768px and 1023px Tablet
-min 1024 Screen
+The application itself is a chat with different conversations. There is also a user page to manage user information.
 
-Login y Registro
-Sobre el login y el register he optado por usar la localStorage para gestionar los diferentes ids así como el token. Para poder gestionar información del usuario también he usado el userSlice.
+### Breakpoints
 
-Arquitectura de carpetas:
-Tenemos directorios con el layout, una solo de los .css, componentes, páginas...
+To ensure a responsive mobile experience, the following breakpoints have been defined:
+
+- Up to 767px: Mobile
+- Between 768px and 1023px: Tablet
+- 1024px or larger: Screen
+
+### Login and Registration
+
+For login and registration, I've chosen to use localStorage to manage different IDs and tokens. To handle user information, I've also used userSlice.
+
+### Folder Architecture
+
+We have directories for layout, CSS, components, pages, and more.
+
