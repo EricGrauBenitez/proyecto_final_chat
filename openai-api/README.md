@@ -1,45 +1,52 @@
-Esta api corresponde a un proyecto más grande.
+# Chat OpenAI API
 
-https://github.com/EricGrauBenitez/chat-backend.git
-https://github.com/EricGrauBenitez/chat-frontend.git
+This API corresponds to a larger project.
 
-Esta es la parte del proyecto que gestiona la llamada a la api de OpenAi para recoger la respuesta a tu pregunta de ChatGPT.
-Está hecho con Typescript porque el tipado que nos proporciona nos permite ser más precisos.
+Related repositories:
+- [chat-backend](https://github.com/EricGrauBenitez/chat-backend.git)
+- [chat-frontend](https://github.com/EricGrauBenitez/chat-frontend.git)
 
-Primero, clona el repositorio en la raiz de tu proyecto:
+This is the part of the project responsible for handling calls to the OpenAI API to retrieve responses to your ChatGPT questions. It's developed in TypeScript to take advantage of its type system, which allows us to be more precise.
 
-git clone https://github.com/EricGrauBenitez/chat-openai.git
+## Getting Started
 
-cd chat-openai
-npm install
+1. Clone this repository into the root of your project:
 
-si no tienes typescript de manera global:
+ 
+   git clone https://github.com/EricGrauBenitez/chat-openai.git
+   cd chat-openai
+   npm install
+
+If you don't have TypeScript globally installed, install it locally as a development dependency:
+
 npm install typescript --save-dev
 
-Para poder usarla, necesitarás 2 api keys que proporciona openai a sus usuarios.
+### To use this API, you'll need two API keys provided by OpenAI.
 
-Paso 1- Regístrate a:
-https://openai.com/
+## Obtaining Your OpenAI API Keys
+- Step 1: Register with OpenAI
+Register at https://openai.com/.
 
-Paso 2- Una vez registrado ves a:
-https://platform.openai.com/
-y vas a la pestaña "Personal", sección "View API Keys".
+- Step 2: Obtain Your API Keys
+Once registered, go to https://platform.openai.com/ and visit the "Personal" tab under the "View API Keys" section.
 
-Paso 3- Pulsas el botón "Create new secret key" y te dará tu: OPENAI_API_KEY.
-Por último, a la sección "ORGANIZATION" de la izquierda, clicas en Settings y recoges el: OPENAI_ORGANIZATION que tiene un formato "org-ewfubffie73t3q"
+- Step 3: Generate a New Secret Key
+Click the "Create new secret key" button to obtain your OPENAI_API_KEY. Finally, in the "ORGANIZATION" section on the left, click on "Settings" and retrieve your OPENAI_ORGANIZATION, which follows the format "org-ewfubffie73t3q."
 
-Debes crear un archivo .env para poder gestionar las variables de entorno y añadir:
+You should create a .env file to manage environment variables and add the following:
 
-BASE_URL=http://localhost:4000
-OPENAI_API_KEY=aqui_tu_openai_key
-OPENAI_ORGANIZATION=aqui_tu_organization_key
 
-para activar el servidor, abre la terminal desde esta carpeta y escribe el comando:
+- BASE_URL=http://localhost:4000
+- OPENAI_API_KEY=your_openai_key_here
+- OPENAI_ORGANIZATION=your_organization_key_here
+  
+### To start the server, open the terminal from this folder and run the following command:
 
 npm run dev
 
-ENDPOINT:
-http://localhost:4000/api/v1/gpt POST con formato:
+ENDPOINT: http://localhost:4000/api/v1/gpt
+POST with format:
+json
 {
-"query": "cómo están los máquinas?"
+  "query": "how are the machines doing?"
 }
